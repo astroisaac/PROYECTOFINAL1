@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Cover_SinPostal_Guanajuato.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Cover_SinPostal_Guanajuato@2x.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Cover_SinPostal_Guanajuato@3x.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
