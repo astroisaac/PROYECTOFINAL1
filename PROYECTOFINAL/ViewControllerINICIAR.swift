@@ -13,8 +13,13 @@ class ViewControllerINICIAR: UIViewController {
 
     @IBOutlet weak var correoTF: UITextField!
     @IBOutlet weak var contraTF: UITextField!
+    @IBOutlet var lblinicioVa: UILabel!
+    @IBOutlet var lblinicioContra: UILabel!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        lblinicioVa.isHidden = true
+        lblinicioContra.isHidden = true
     }
     @IBAction func iniciarsesion(_ sender: UIButton) {
         if let email = correoTF.text, let password = contraTF.text{
@@ -22,10 +27,12 @@ class ViewControllerINICIAR: UIViewController {
                 authResult, error in
                 if let e = error{
                     print(e.localizedDescription)
+                    self.lblinicioVa.isHidden = false
+                    self.lblinicioContra.isHidden = false
                 }
                 else{
                     print("Inicio de sesion exitosa")
-                    self.performSegue(withIdentifier: "InicioSegue", sender: self)
+                    self.performSegue(withIdentifier: "LoginSegue", sender: self)
                 }
             }
         }

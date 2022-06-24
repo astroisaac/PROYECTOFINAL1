@@ -9,6 +9,6 @@ target 'PROYECTOFINAL' do
 
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
-
+pod 'Firebase
 
 end

@@ -16,6 +16,7 @@
 		06A29CAF285CDFA600A8A07B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06A29CAE285CDFA600A8A07B /* GoogleService-Info.plist */; };
 		06A29CB1285CE47900A8A07B /* ViewControllerINICIAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A29CB0285CE47900A8A07B /* ViewControllerINICIAR.swift */; };
 		06A29CB3285CE49B00A8A07B /* ViewControllerREGISTRAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A29CB2285CE49B00A8A07B /* ViewControllerREGISTRAR.swift */; };
+		D92D01BD2865E44900E35B53 /* signOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D01BC2865E44900E35B53 /* signOutViewController.swift */; };
 		FC508189F87D9FCE6B8441CD /* Pods_PROYECTOFINAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B896D00B8C7E56EB70E17E5 /* Pods_PROYECTOFINAL.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		06A29CB2285CE49B00A8A07B /* ViewControllerREGISTRAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerREGISTRAR.swift; sourceTree = "<group>"; };
 		108CCBB7AECFF4A32B0A34E1 /* Pods-PROYECTOFINAL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROYECTOFINAL.debug.xcconfig"; path = "Target Support Files/Pods-PROYECTOFINAL/Pods-PROYECTOFINAL.debug.xcconfig"; sourceTree = "<group>"; };
 		2B896D00B8C7E56EB70E17E5 /* Pods_PROYECTOFINAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PROYECTOFINAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92D01BC2865E44900E35B53 /* signOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signOutViewController.swift; sourceTree = "<group>"; };
 		EBABCA8D5E416B495117042A /* Pods-PROYECTOFINAL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROYECTOFINAL.release.xcconfig"; path = "Target Support Files/Pods-PROYECTOFINAL/Pods-PROYECTOFINAL.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				06A29C9C285CDC9B00A8A07B /* SceneDelegate.swift */,
 				06A29C9E285CDC9B00A8A07B /* ViewController.swift */,
 				06A29CA0285CDC9C00A8A07B /* Main.storyboard */,
+				D92D01BC2865E44900E35B53 /* signOutViewController.swift */,
 				06A29CB2285CE49B00A8A07B /* ViewControllerREGISTRAR.swift */,
 				06A29CB0285CE47900A8A07B /* ViewControllerINICIAR.swift */,
 				06A29CA3285CDC9D00A8A07B /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 				06A29CB1285CE47900A8A07B /* ViewControllerINICIAR.swift in Sources */,
 				06A29C9F285CDC9B00A8A07B /* ViewController.swift in Sources */,
 				06A29C9B285CDC9B00A8A07B /* AppDelegate.swift in Sources */,
+				D92D01BD2865E44900E35B53 /* signOutViewController.swift in Sources */,
 				06A29C9D285CDC9B00A8A07B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

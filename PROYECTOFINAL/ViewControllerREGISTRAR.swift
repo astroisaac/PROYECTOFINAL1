@@ -19,6 +19,7 @@ class ViewControllerREGISTRAR: UIViewController {
 
         // Do any additional setup after loading the view.
         lblValidacion.isHidden = true
+        lblCorreoVa.isHidden = true
     }
     
 
@@ -26,17 +27,17 @@ class ViewControllerREGISTRAR: UIViewController {
 
     @IBAction func Registart(_ sender: UIButton) {
         if let email = emailTF.text, let password = contralTF.text {
-        Auth.auth().createUser(withEmail: email, password: password){
+            Auth.auth().createUser(withEmail: email, password: password){ [self]
             authResult, error in
             if let e = error{
-                lblValidacion.isHidden = false
-                lblCorreoVa.isHidden = false
+                self.lblValidacion.isHidden = false
+                self.lblCorreoVa.isHidden = false
                 print(e.localizedDescription)
             }else{
                 print("Usuario creado con exito.")
                 self
                     .performSegue(withIdentifier: "Iniciosegue", sender: self)
-            }
+                }
             }
         }
     }
