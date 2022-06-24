@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseAuth
+import FirebaseFirestore
 
 class ViewControllerREGISTRAR: UIViewController {
     @IBOutlet var usuarioTF: UITextField!
@@ -15,6 +16,8 @@ class ViewControllerREGISTRAR: UIViewController {
     @IBOutlet weak var contralTF : UITextField!
     @IBOutlet var lblValidacion: UILabel!
     @IBOutlet var lblCorreoVa: UILabel!
+    
+    private let db = Firestore.firestore()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,8 +39,10 @@ class ViewControllerREGISTRAR: UIViewController {
                 print(e.localizedDescription)
             }else{
                 print("Usuario creado con exito.")
+                db.collection("User").document(email).setData(["Nombre" : usuarioTF.text ?? " "])
                 self
                     .performSegue(withIdentifier: "Iniciosegue", sender: self)
+                
                 }
             }
         }
