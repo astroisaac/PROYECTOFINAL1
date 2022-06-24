@@ -10,6 +10,7 @@ import FirebaseCore
 import FirebaseAuth
 
 class ViewControllerREGISTRAR: UIViewController {
+    @IBOutlet var usuarioTF: UITextField!
     @IBOutlet weak var emailTF : UITextField!
     @IBOutlet weak var contralTF : UITextField!
     @IBOutlet var lblValidacion: UILabel!

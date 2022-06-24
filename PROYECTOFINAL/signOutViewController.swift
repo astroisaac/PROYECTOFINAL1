@@ -2,7 +2,6 @@
 import UIKit
 import FirebaseAuth
 import FirebaseCore
-import FirebaseFirestore
 
 class signOutViewController: UIViewController {
     override func viewDidLoad() {
@@ -10,11 +9,14 @@ class signOutViewController: UIViewController {
     }
     
     @IBAction func CerrarSesion(_ sender: Any) {
-        do{
-            try Auth.auth().signOut()
-            navigationController?.popViewController(animated: true)
-        }catch{
-//            se produjo un error
+        let firebaseAuth = Auth.auth()
+    do {
+      try firebaseAuth.signOut()
+        
+    } catch let signOutError as NSError {
+      print("Error signing out: %@", signOutError)
         }
+      
     }
 }
+

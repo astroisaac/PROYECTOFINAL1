@@ -126,6 +126,7 @@
                         <outlet property="emailTF" destination="rN2-dD-exm" id="VIz-Mq-s3o"/>
                         <outlet property="lblCorreoVa" destination="ioU-8B-Eo4" id="wwj-jY-qlu"/>
                         <outlet property="lblValidacion" destination="wd6-3C-8ZH" id="QaE-V9-aau"/>
+                        <outlet property="usuarioTF" destination="iAu-Af-48v" id="XOu-Yk-SMT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAe-kp-RbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -171,13 +172,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PZ-Mf-vi9">
-                                <rect key="frame" x="208" y="723" width="140" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-OX-agl">
+                                <rect key="frame" x="180" y="715" width="164" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cerrar sesion"/>
                                 <connections>
-                                    <action selector="CerrarSesion:" destination="oNM-8Z-mhV" eventType="touchUpInside" id="KvF-a0-Eir"/>
+                                    <action selector="CerrarSesion:" destination="oNM-8Z-mhV" eventType="touchUpInside" id="Zcb-Dk-lEl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -185,9 +186,6 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="MET-5B-PTA"/>
-                    <connections>
-                        <outlet property="CerrarSesionPrincipal" destination="8PZ-Mf-vi9" id="yha-wp-GIG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIb-re-pjs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
