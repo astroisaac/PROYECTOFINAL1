@@ -13,6 +13,7 @@ class ViewControllerREGISTRAR: UIViewController {
     @IBOutlet weak var emailTF : UITextField!
     @IBOutlet weak var contralTF : UITextField!
     @IBOutlet var lblValidacion: UILabel!
+    @IBOutlet var lblCorreoVa: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,9 +26,11 @@ class ViewControllerREGISTRAR: UIViewController {
 
     @IBAction func Registart(_ sender: UIButton) {
         if let email = emailTF.text, let password = contralTF.text {
-        Auth.auth().createUser(withEmail: email, password: password){authResult, error in
+        Auth.auth().createUser(withEmail: email, password: password){
+            authResult, error in
             if let e = error{
                 lblValidacion.isHidden = false
+                lblCorreoVa.isHidden = false
                 print(e.localizedDescription)
             }else{
                 print("Usuario creado con exito.")
