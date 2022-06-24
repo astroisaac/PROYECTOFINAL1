@@ -12,10 +12,12 @@ import FirebaseAuth
 class ViewControllerREGISTRAR: UIViewController {
     @IBOutlet weak var emailTF : UITextField!
     @IBOutlet weak var contralTF : UITextField!
+    @IBOutlet var lblValidacion: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lblValidacion.isHidden = true
     }
     
 
@@ -25,6 +27,7 @@ class ViewControllerREGISTRAR: UIViewController {
         if let email = emailTF.text, let password = contralTF.text {
         Auth.auth().createUser(withEmail: email, password: password){authResult, error in
             if let e = error{
+                lblValidacion.isHidden = false
                 print(e.localizedDescription)
             }else{
                 print("Usuario creado con exito.")
